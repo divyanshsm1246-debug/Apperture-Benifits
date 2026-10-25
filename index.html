@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apperture | The Future of Digital Exchange</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Subtle Purple Ambient Glow */
+        .ambient-glow {
+            position: fixed;
+            top: -20%;
+            left: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(124,77,255,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Glassmorphism Cards */
+        .feature-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(124, 77, 255, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(124, 77, 255, 0.2);
+        }
+
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body class="relative antialiased selection:bg-[#7C4DFF] selection:text-white">
+
+    <div class="ambient-glow"></div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Header -->
+        <header class="py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center">
+                <!-- Prototype Link -->
+                <a href="https://Appperture.onrender.com" target="_blank" class="text-xl md:text-2xl font-black tracking-tighter text-white hover:text-[#7C4DFF] transition-colors duration-300">
+                    Appperture.onrender.com
+                </a>
+            </div>
+            
+            <!-- Coming Soon Status -->
+            <nav class="flex gap-3 text-lg md:text-xl font-black uppercase tracking-[0.3em]">
+                <span class="text-[#FFD700] drop-shadow-[0_0_12px_rgba(255,215,0,0.6)]">Coming</span>
+                <span class="text-[#00E5FF] drop-shadow-[0_0_15px_rgba(0,229,255,0.8)]">Soon</span>
+            </nav>
+        </header>
+
+        <!-- Main Hero Section -->
+        <main class="py-20 flex flex-col items-center text-center">
+            <div class="inline-block px-5 py-2 mb-10 text-[11px] font-bold tracking-[0.2em] text-[#7C4DFF] uppercase border border-[#7C4DFF]/30 rounded-full bg-[#7C4DFF]/5">
+                The Apperture Ecosystem
+            </div>
+            
+            <!-- Clean, Ultra-Bold Typography -->
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-8 text-white">
+                Define Your <br/>
+                <span class="text-[#7C4DFF]">Inner Circle</span>
+            </h1>
+            
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
+                Apperture was born from a singular vision: to completely redefine how value, art, and utility are perceived and exchanged. 
+            </p>
+
+            <!-- DNA Quote Panel -->
+            <div class="glass-panel p-8 md:p-12 rounded-3xl w-full max-w-4xl text-center mb-24 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-2 h-full bg-[#7C4DFF]"></div>
+                <p class="text-xl md:text-2xl text-white font-semibold leading-relaxed tracking-wide">
+                    "Innovation is fundamentally encoded into our very <span class="font-black text-[#7C4DFF] tracking-widest uppercase text-3xl mx-2 drop-shadow-[0_0_8px_rgba(124,77,255,0.5)]">DNA</span>. Every protocol we design is a testament to pushing boundaries."
+                </p>
+            </div>
+        </main>
+
+        <!-- Features Grid (All 8 Real Benefits from Chat History) -->
+        <section class="py-12 pb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black uppercase tracking-widest text-white">System Protocol</h2>
+                <div class="h-1 w-20 bg-[#7C4DFF] mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Feature 1: Free Listings -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Free Listings</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Post your items with absolutely zero upfront costs. Start sharing your assets with the community immediately.</p>
+                </div>
+
+                <!-- Feature 2: Unlimited Sales -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Unlimited Sales</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Scale your potential without boundaries. There are no caps on how many transactions you can successfully close.</p>
+                </div>
+
+                <!-- Feature 3: Current Refresh Rates -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Daily Refresh</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Your listings remain highly competitive. Regular refresh rates ensure your items are worth the deal every time.</p>
+                </div>
+
+                <!-- Feature 4: Cheap Ads -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Cheap Ads</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Boost your market presence effortlessly. Highly cost-effective advertising puts you in front of the right eyes.</p>
+                </div>
+
+                <!-- Feature 5: Many Categories -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Many Categories</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Dive into diverse markets. We support an extensive and continually growing range of item categories.</p>
+                </div>
+
+                <!-- Feature 6: Apperture Nexus AI -->
+                <div class="feature-card p-8 rounded-3xl border border-[#7C4DFF] bg-[#7C4DFF]/5 shadow-[0_0_15px_rgba(124,77,255,0.15)]">
+                    <div class="text-[#7C4DFF] mb-6 flex items-center justify-between">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span class="text-[10px] font-black bg-[#7C4DFF] text-white px-2 py-1 rounded-sm uppercase tracking-widest">Free</span>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Nexus AI</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed font-medium">Our built-in AI configures your items and automatically pushes listings to the right people. 100% free of charge.</p>
+                </div>
+                
+                <!-- Feature 7: Multiview -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 8l10 5 10-5-10-5L2 8z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 13l10 5 10-5"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 18l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Multiview</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Explore items from multiple perspectives, providing a 360-degree comprehensive visual understanding of every piece.</p>
+                </div>
+
+                <!-- Feature 8: Symbiotic Ecosystem -->
+                <div class="feature-card p-8 rounded-3xl border border-white/5">
+                    <div class="text-[#7C4DFF] mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-black mb-3 uppercase tracking-wider text-white">Symbiotic Growth</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">True exclusivity. A seamless, immersive ecosystem designed to heavily reward members of its inner circle.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 mt-8">
+            <div class="text-gray-500 text-xs font-semibold tracking-widest uppercase">
+                &copy; 2026 Apperture Network
+            </div>
+            <div class="flex gap-8 text-[10px] uppercase font-bold tracking-[0.2em] text-[#7C4DFF]">
+                <a href="#" class="hover:text-white transition-colors">Privacy Protocol</a>
+                <a href="#" class="hover:text-white transition-colors">Terms</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
